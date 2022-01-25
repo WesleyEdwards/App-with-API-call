@@ -69,8 +69,7 @@ public class MainActivity extends AppCompatActivity {
                         assert responseBody != null;
                         String body = responseBody.string();
 //                        This prints out the response just to make sure it's working.
-                        Log.d(TAG, "onResponse: " + body);
-                        System.out.println(body);
+//                        Log.d(TAG, "onResponse: " + body);
 
 //                    This takes the first city in the list and stores it.
 
@@ -106,118 +105,5 @@ public class MainActivity extends AppCompatActivity {
             });
 
         });
-
-
-//                    StringBuilder cityReal = new StringBuilder();
-//                    StringBuilder state = new StringBuilder();
-//                    StringBuilder country = new StringBuilder();
-//
-//                    char c = body.charAt(0);
-//                    int i = 0;
-//
-//                    while (c != ':') {
-//                        i++;
-//                        c = body.charAt(i);
-//                    }
-////                    Get CITY
-//                    i ++;
-//                    while (c != '"') {
-//                        cityReal.append(c);
-//                        i++;
-//                        c = body.charAt(i);
-//                    }
-//                    i++;
-//
-//                    while (c != ':') {
-//                        i++;
-//                        c = body.charAt(i);
-//                    }
-////                    Get STATE
-//                    i ++;
-//                    while (c != '"') {
-//                        state.append(c);
-//                        i++;
-//                        c = body.charAt(i);
-//                    }
-//                    while (c != ':') {
-//                        i++;
-//                        c = body.charAt(i);
-//                    }
-////                    get COUNTRY
-//                    i ++;
-//                    while (c != '"') {
-//                        country.append(c);
-//                        i++;
-//                        c = body.charAt(i);
-//                    }
-//
-//
-//                    cityReal.delete(0, 1);
-//                    state.delete(0, 1);
-//                    country.delete(0, 1);
-//                    System.out.println("City: " + cityReal.toString());
-//                    System.out.println("State: " + state.toString());
-
-//                    System.out.println("Country: " + country.toString());
-//                //Fetching nested Json using JSONArray
-//                JSONArray arrObj = null;
-//                try {
-//                    arrObj = jsonObj.getJSONArray("city");
-//                } catch (JSONException e) {
-//                    e.printStackTrace();
-//                }
-//                for (int i = 0; i < arrObj .length(); i++) {
-//                    String programming = null;
-//                    try {
-//                        programming = arrObj.getJSONObject(i).getString("state");
-//                    } catch (JSONException e) {
-//                        e.printStackTrace();
-//                    }
-//                    String scripting = null;
-//                    try {
-//                        scripting = arrObj.getJSONObject(i).getString("country");
-//                    } catch (JSONException e) {
-//                        e.printStackTrace();
-//                    }
-////                    String ml = null;
-////                    try {
-////                        ml = arrObj.getJSONObject(i).getString("ml");
-////                    } catch (JSONException e) {
-////                        e.printStackTrace();
-////                    }
-//
-//                    System.out.println("###### Emp Skills (nested) ###########");
-//                    System.out.println("Programming : " + programming);
-//                    System.out.println("Scripting   : " + scripting);
-////                    System.out.println("Ml          : " + ml);
-//                }
-
-
-//        This should not be run on the main thread.
-//        Request request = new Request.Builder()
-//                .url("https://publicobject.com/helloworld.txt")
-//                .build();
-//
-////        This client makes sure it is not ran in the main thread.
-//        client.newCall(request).enqueue(new Callback() {
-//
-//            @Override
-//            public void onFailure(@NonNull Call call, @NonNull IOException e) {
-//                e.printStackTrace();
-//            }
-//
-////            Child thread
-//            @Override
-//            public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
-//                if (response.isSuccessful()) {
-////                    Input string
-//                    ResponseBody responseBody = response.body();
-//                    String body = responseBody.string();
-//                    Log.d(TAG, "onResponse: " + body);
-//                    Log.d(TAG, "onResponse: " + body);
-//
-//                }
-//            }
-//        });
     }
 }
