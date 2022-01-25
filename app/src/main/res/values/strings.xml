@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">App-with-API-call</string>
     <string name="welcome">Welcome to City-Search</string>
-    <string name="enter">Enter City name below</string>
+    <string name="enter">Enter name below to find a city with that sequence of chars.</string>
 </resources>
